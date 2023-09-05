@@ -3,8 +3,8 @@ const app = express()
 const port = 10000
 const mongoDB=require("./db")
 mongoDB();
-app.use((req,res,next)=>{
-  res.setHeader("Access-Control-Allow-Origin","https://chiku-food-express-app.netlify.app/")
+app.use((req,res,next)=>{                      
+  res.setHeader("Access-Control-Allow-Origin","https://chiku-food-express-app.netlify.app")
   res.header(
     "Access-Control-Allow-Headers",
     "Origin,X-Requested-With,Content-Type,Accept"
